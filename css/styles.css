@@ -1,19 +1,20 @@
 body { 
 	margin: 0; padding: 0; background: url(../images/body-bg.png); 
-	font-family: Arial, Helvetica, sans-serif; font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif; font-size:15px;
 }
+
 h2, h3, h4 { margin: 0; padding: 0; }
 
 header { 
 	position: relative;
 	width: 766px; height: 59px;
+	background: url(../images/header-nav-bg.png) center top no-repeat;
 	margin: 0 auto;
 	z-index: 100;
 }
 
 header > nav {
 	display: block; 
-	background: url(../images/header-nav-bg.png) center top no-repeat;
 	float: right; text-align: right;
 }
 header > nav > ul {
@@ -45,10 +46,24 @@ header > nav > ul > li:hover > ul { display: block; opacity: 1; }
 #right { background: url(../images/right-bg.png); position: absolute; right: 0; height: 337px; width: 50%; }
 
 #logo > img { height: 30px; margin-top: 15px;  }
-#logo { font-size: 35px; text-decoration: none; line-height: 60px; 15px; color: #eee; }
+#logo { font-size: 35px; text-decoration: none; line-height: 60px; color: #eee; }
 
 #banner { position: relative; background: url(../images/banner-bg.png); height: 278px; width: 766px; margin: 0 auto; }
 #banner > canvas { width: 100%; height: 278px; background: none; }
+
+#left-arrow { 
+	background: url(../images/left-arrow.png); 
+	position: absolute; top: 120px; width: 32px;
+	height: 32px; 
+	border: 1px solid #333;
+}
+
+#right-arrow { 
+	background: url(../images/right-arrow.png); 
+	position: absolute; top: 120px; right: 0; 
+	width: 32px; height: 32px;
+	border: 1px solid #333;
+}
 
 #content { width: 766px; margin: 20px auto; color: #333; min-height: 300px; }
 #content h2 { 
@@ -59,18 +74,33 @@ header > nav > ul > li:hover > ul { display: block; opacity: 1; }
 	font-family: 'Arial', Helvetica, sans-serif; font-size: 24px; text-transform: uppercase; color: #e80; 
 	letter-spacing: -1px; font-weight: 400; margin-bottom: 10px;
 }
-#content h4 { font-family: 'Oswald', sans-serif; font-size: 14px; color: #565656; text-transform: uppercase; font-weight: normal; }
 
-#content section { margin-top: 30px; }
+#content h4 {
+	font-family: 'Oswald', sans-serif; font-size: 14px;
+	color: #565656; text-transform: uppercase; font-weight: normal;
+}
+
+#content section { margin-top: 50px; padding-bottom: 50px; }
 
 #news { list-style: none; padding: 0; }
 
-.column { float: left; width: 245px; margin: 0 5px;  height: 400px; }
+.column { float: left; width: 245px; margin: 0 5px; text-align: center;}
 .column2 { float: left; width: 490px; margin: 0 5px;  }
 .clear { clear: both; }
 
+.portfolio { padding: 0; }
+.portfolio li {
+	list-style-type: none; padding: 0; margin: 5px; display: inline-block;
+}
+.portfolio img {
+	width: 240px; height: 150px;
+}
+
+.social { padding: 0; }
+.social li { list-style-type: none; }
+
 footer { 
-	height: 307px; background: url(../images/footer-bg.png); padding-top: 20px; color: #aaa; font-size: 10px;
+	height: 200px; background: url(../images/footer-bg.png); padding-top: 20px; color: #aaa; font-size: 10px;
 }
 footer > ul { width: 766px; margin: 0 auto; padding: 0; display: block; height: 120px; }
 footer > ul > li  {
@@ -84,52 +114,5 @@ footer > ul > li > ul {
 	list-style: none; padding: 0; margin-top: 10px; font-family: 'Arial', Helvetica, sans-serif; font-size: 10px;
 }
 
-#copyright { clear: both; width: 766px; margin: 10px auto; }
-
-
-
-/* j5g3 Stuff */
-
-
-#screen { 
-	width: 640px; height: 480px; margin: 0 auto; 
-	display: block; background: #000; position: relative; 
-}
-
-#assets { display: none; }
-#loading { font-size: 30px; line-height: 480px; }
-#pause { font-size: 30px; line-height: 480px; }
-#game-over { font-size: 30px; line-height: 480px; }
-#start { font-size: 30px; text-align: center; line-height: 480px; }
-
-#games div { display: inline-block; width: 242px; margin: 0 8px 8px 0; }
-#games p { margin: 0; }
-#games img { width: 240px; height: 200px; margin-top: 10px; }
-#games a { font-size: 20px; display: block; }
-
-.r720p { width: 1028px !important; height: 720px !important; }
-.r800x450 { width: 800px !important; height: 450px !important; }
-
-
-#keyboard { width: 600px; margin: 20px auto; }
-
-#keyboard > b { 
-	font-size: 10px; display: inline-block; width: 30px; height: 30px; border: 1px solid #ccc; 
-	line-height: 15px; text-align: center; float: left; font-weight: normal;
-	background-color: #fff;
-}
-
-#keyboard > b:hover { background-color: #9ff; }
-
-#keyboard > b.two { width: 45px; line-height: 30px; }
-#keyboard > b.three { width: 53px; line-height: 30px; }
-#keyboard > b.four { width: 70px; line-height: 30px; }
-#keyboard > b.spacebar { width: 135px; line-height: 30px; }
-#keyboard > b.pressed { background-color: #ccc; }
-#keyboard > b.half { width: 15px; border: 0; background: none; }
-
-#keyboard > hr { height: 10px; clear: both; border: 0; margin: 0; }
-#keyboard > br { clear: both; }
-
-#keyboard-code { text-align: center; font-size: 14px; }
+#copyright { text-align: center; clear: both; width: 766px; margin: 10px auto; }
 

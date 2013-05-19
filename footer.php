@@ -15,7 +15,10 @@
 			<li><a href="contact.php">Contact</a></li>
 		</ul></li>
 		<li>Games<ul>
-			<li><a href="breakout.php">Breakout</a></li>
+			<li><a href="breakout">Breakout</a></li>
+			<li><a href="blocks">Blocks</a></li>
+			<li><a href="sokoban">Sokoban</a></li>
+			<li><a href="bubbles">Bubbles</a></li>
 		</ul></li>
 		<li>Frameworks<ul>
 			<li><a href="g3.php">j5g3 Game Engine</a></li>
@@ -26,9 +29,10 @@
 			-->
 		</ul></li>
 		<li>Social<ul>
-			<li><a href="https://www.facebook.com/CoaxialSoftware" class="facebook">Facebook</a></li>
-			<li><a href="https://twitter.com/CoaxialSoftware" class="twitter">Twitter</a></li>
-			<li><a href="https://github.com/coaxialsoftware" class="github">Github</a></li>
+			<li><a href="https://www.facebook.com/CoaxialSoftware">Facebook</a></li>
+			<li><a href="https://twitter.com/CoaxialSoftware">Twitter</a></li>
+			<li><a href="https://linkedin.com/CoaxialSoftware">LinkedIn</a></li>
+			<li><a href="https://github.com/coaxialsoftware">Github</a></li>
 		</ul></li>
 	</ul>
 </footer>

@@ -2,16 +2,13 @@
 <header>
 	<nav>
 		<ul>
-		<li><a href="about.php">About</a></li>
-		<li><a href="portfolio.php">Portfolio</a></li>
-		<li><a href="products.php">Frameworks</a><ul>
-			<li><a href="g3.php">j5g3 Game Engine</a></li>
-			<li><a href="ui.php">j5ui Framework</a></li>
+		<li><a href="#about">About</a></li>
+		<li><a href="#portfolio">Portfolio</a></li>
+		<li><a href="javascript:">Frameworks</a><ul>
+			<li><a href="http://j5g3.com">j5g3 Game Engine</a></li>
+			<li><a href="http://giancarlo.github.io/mice.js">Mice.js</a></li>
 		</ul></li>
-		<li><a href="contact.php">Contact</a><ul>
-			<li><a href="support.php">Support</a></li>
-			<li><a href="contact.php">Contact Us</a></li>
-		</ul></li>
+		<li><a href="#contact">Contact</a></li>
 	</nav>
 	<a id="logo" href="index.php"><img src="images/logo.png" /></a>
 </header>
