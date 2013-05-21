@@ -88,12 +88,14 @@ header > nav > ul > li:hover > ul { display: block; opacity: 1; }
 .column2 { float: left; width: 490px; margin: 0 5px;  }
 .clear { clear: both; }
 
+.column > img { margin: 30px 0 0 0; height: 128px;}
+
 .portfolio { padding: 0; }
 .portfolio li {
 	list-style-type: none; padding: 0; margin: 5px; display: inline-block;
 }
 .portfolio img {
-	width: 240px; height: 150px;
+	width: 240px; height: 150px; border-radius: 8px;
 }
 
 .social { padding: 0; }
