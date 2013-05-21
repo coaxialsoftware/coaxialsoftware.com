@@ -25,8 +25,6 @@
 </head>
 <body>
 
-<div id="left"></div><div id="right"></div>
-
 <header>
 	<nav>
 		<ul>
@@ -37,48 +35,53 @@
 			<li><a href="http://giancarlo.github.io/mice.js">Mice.js</a></li>
 		</ul></li>
 		<li><a href="#contact">Contact</a></li>
+		</ul>
+		<a id="logo" href="javascript: window.scrollTo(0, 0)"><img src="images/logo.png" /></a>
 	</nav>
-	<a id="logo" href="index.php"><img src="images/logo.png" /></a>
 </header>
 
 <div id="banner">
-	<a href="javascript:" id="left-arrow"/></a>
-	<a href="javascript:" id="right-arrow"/></a>
-	<canvas id="screen"></canvas>
+	<div id="slides">
+		<a href="javascript:" id="left-arrow"/></a>
+		<a href="javascript:" id="right-arrow"/></a>
+	</div>
 </div>
 
 <div id="content">
 	<section>
-		<div class="column">
-			<h2>HTML5 Games</h2>
-			<h4>Multi-platform, Multi-device</h4>
-			<img src="images/HTML5_Badge_128.png" />
-			<p>
-				Our games run on every current browser, including mobile devices.
-			</p>
+		<div>
+			<div class="column">
+				<h2>HTML5 Games</h2>
+				<h4>Multi-platform, Multi-device</h4>
+				<img src="images/HTML5_Badge_128.png" />
+				<p>
+					Our games run on every current browser, including mobile devices.
+				</p>
+			</div>
+			<div class="column">
+				<h2>J5G3 Framework</h2>
+				<h4>Powerful Javascript Game Engine</h4>
+				<img src="images/engine.png" />
+				<p>
+				Create your own games with our in-house open source game engine. Developed with compatibility and
+				performance in mind. Commercial licenses available.
+				</p>
+			</div>
+			<div class="column">
+				<h2>Mobile Games</h2>
+				<h4>Native Speeds on iOS and Android</h4>
+				<img src="images/mobile.png" />
+				<p>
+				Tools like CocoonJS and GameClosure allows us to deliver our games
+				to mobile devices. The same game will run on any other browser with no changes.
+				</p>
+			</div>
+			<div class="clear"></div>
 		</div>
-		<div class="column">
-			<h2>J5G3 Framework</h2>
-			<h4>Powerful Javascript Game Engine</h4>
-			<img src="images/engine.png" />
-			<p>
-			Create your own games with our in-house open source game engine. Developed with compatibility and
-			performance in mind. Commercial licenses available.
-			</p>
-		</div>
-		<div class="column">
-			<h2>Mobile Games</h2>
-			<h4>Native Speeds on iOS and Android</h4>
-			<img src="images/mobile.png" />
-			<p>
-			Tools like CocoonJS and GameClosure allows us to deliver our games
-			to mobile devices. The same game will run on any other browser with no changes.
-			</p>
-		</div>
-		<div class="clear"></div>
 	</section>
 	
 	<section>
+	<div>
 		<div class="column2">
 			<h2><a name="about">About Us</a></h2>
 			<p>
@@ -94,9 +97,11 @@
 			<img src="images/logo.png" style="width: 240px;"/>
 		</div>
 		<div class="clear"></div>
+	</div>
 	</section>
 	
 	<section>
+	<div>
 		<h2><a name="portfolio">Our Games</a></h2>
 		<ul class="portfolio">
 		<li>
@@ -115,10 +120,12 @@
 			<img src="images/bubbles.png" />
 			</a>
 		</li>
-	<div class="clear"></div>
+		<div class="clear"></div>
+	</div>
 	</section>
 	
 	<section>
+	<div>
 		<div class="column2">
 			<h2><a name="contact">Contact Us</a></h2>
 			<h4>Frequently Asked Questions</h4>
@@ -143,6 +150,7 @@
 			<li><img src="" />Github</li>
 		</div>
 		<div class="clear"></div>
+	</div>
 	</section>
 </div>
 
