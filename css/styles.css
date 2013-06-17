@@ -1,6 +1,8 @@
 body { 
-	margin: 0; padding: 0; background: url(../images/body-bg.png); 
-	font-family: Arial, Helvetica, sans-serif; font-size:15px;
+	background: url(../images/coaxial-bg.png) center 0; 
+	background-size: 100%;
+	margin: 0; padding: 0; 
+	font-family: "Arial", Helvetica, sans-serif; font-size:14px;
 }
 
 h2, h3, h4 { margin: 0; padding: 0; }
@@ -9,7 +11,7 @@ header {
 	top: 0; left: 0; right: 0;
 	height: 59px;
 	z-index: 100;
-	background-color: #111;
+	background-color: rgba(0, 0, 0, 0.9);
 	position: fixed;
 }
 
@@ -46,58 +48,65 @@ header > nav > ul > li:hover > ul { display: block; opacity: 1; }
 #logo > img { height: 30px; margin-top: 15px;  }
 #logo { font-size: 35px; text-decoration: none; line-height: 60px; color: #eee; }
 
-#banner { 
-	background: url(../images/coaxial-bg.png) center no-repeat; 
-	margin-top: 59px; height: 278px; 
-}
-#banner > canvas { width: 100%; height: 278px; background: none; }
+#content { margin: 0 auto; color: #111; }
+#arrow { position: absolute; bottom: 40px; left: 50%; margin-left: -52px; }
 
-#left-arrow { 
-	background: url(../images/left-arrow.png); 
-	position: absolute; top: 120px; width: 32px;
-	height: 32px; 
-	border: 1px solid #333;
-}
-
-#right-arrow { 
-	background: url(../images/right-arrow.png); 
-	position: absolute; top: 120px; right: 0; 
-	width: 32px; height: 32px;
-	border: 1px solid #333;
-}
-
-#content { margin: 0 auto; color: #333; }
-#content h2 { 
-	font-family: 'Arial', Helvetica, sans-serif; font-size: 22px;
-	text-transform: uppercase; color: #c1272d;
+h2 { 
+	font-family: 'Oswald', sans-serif; font-size: 40px;
+	text-transform: uppercase; color: #E74C3C;
 	letter-spacing: -1px; font-weight: 400; margin-bottom: 10px;
+	text-shadow: rgba(0,0,0,0.4) 0 2px 2px;
 }
-#content h3 { 
-	font-family: 'Arial', Helvetica, sans-serif; font-size: 24px;
+h3 { 
+	font-family: 'Oswald', sans-serif; font-size: 30px;
 	text-transform: uppercase; color: #e80; 
 	letter-spacing: -1px; font-weight: 400; margin-bottom: 10px;
 }
 
-#content h4 {
-	font-family: 'Oswald', sans-serif; font-size: 14px;
-	color: #565656; text-transform: uppercase; font-weight: normal;
+h4 {
+	font-family: 'Oswald', sans-serif; font-size: 20px;
+	color: #BDC3C7; text-transform: uppercase; font-weight: normal;
 }
 
-#content > section { min-height: 333px; padding-top: 50px; padding-bottom: 50px; }
-#content > section:nth-child(odd) { background-color: rgba(250, 245, 245, 0.8); }
-#content > section > div { width: 766px; margin: 0 auto; }
+#content > section { 
+	padding-top: 59px; padding-bottom: 59px; 
+	box-sizing: border-box; display: block; position: relative;
+	color: #eee; 
+}
+
+#content > section:nth-child(odd) { 
+	box-shadow: 0 30px 80px black inset;
+	background: none;
+}
+
+#content > section > div { 
+	width: 860px; height: 440px; position: absolute;
+	left: 50%; top: 50%; margin: -220px 0 0 -430px;
+	background-color: rgba(255,255,255,0.05);
+	padding: 20px;
+	box-sizing: border-box;
+}
+#content > section a[name] { margin-top: -59px; height: 0; display: block; }
+
+section.bg1 { 
+	background: url(images/bg-1.jpg) center 0;
+	background-size: 100%;
+}
 
 #news { list-style: none; padding: 0; }
 
-.column { float: left; width: 245px; margin: 0 5px; text-align: center;}
+.column { 
+	float: left; min-height: 333px; width: 33%;
+	box-sizing: border-box; padding: 0 10px; text-align: center;
+}
 .column2 { float: left; width: 490px; margin: 0 5px;  }
 .clear { clear: both; }
 
 .column > img { margin: 30px 0 0 0; height: 128px;}
 
-.portfolio { padding: 0; }
+.portfolio { padding: 0; margin: 20px 0 0 0; }
 .portfolio li {
-	list-style-type: none; padding: 0; margin: 5px; display: inline-block;
+	list-style-type: none; padding: 0; margin: 8px 15px; display: inline-block;
 }
 .portfolio img {
 	width: 240px; height: 150px; border-radius: 8px;
@@ -107,7 +116,8 @@ header > nav > ul > li:hover > ul { display: block; opacity: 1; }
 .social li { list-style-type: none; }
 
 footer { 
-	height: 200px; background: url(../images/footer-bg.png); padding-top: 20px; color: #aaa; font-size: 10px;
+	height: 300px; padding-top: 20px; color: #aaa; font-size: 14px;
+	box-shadow: 0 30px 80px black inset;
 }
 footer > ul { width: 766px; margin: 0 auto; padding: 0; display: block; height: 120px; }
 footer > ul > li  {
@@ -122,4 +132,3 @@ footer > ul > li > ul {
 }
 
 #copyright { text-align: center; clear: both; width: 766px; margin: 10px auto; }
-
