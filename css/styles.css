@@ -2,8 +2,8 @@ body {
 	background: url(../images/coaxial-bg.png) center 0; 
 	background-size: 100%;
 	margin: 0; padding: 0; 
-	font-family: "Arial", Helvetica, sans-serif;
-	font-size:18px;
+	font-family: "Lato", Helvetica, sans-serif;
+	font-size: 16px;
 	min-width: 860px;
 }
 
@@ -44,7 +44,7 @@ header > nav > ul a:hover {
 
 h1, h2, h3, h4, blockquote {
 	font-family: 'Oswald', sans-serif; 
-	margin: 0;
+	margin: 0; color: #eee;
 	letter-spacing: -1px; 
 	text-transform: uppercase;
 }
@@ -72,15 +72,15 @@ h4 {
 	font-size: 20px;
 	color: #eee; font-weight: normal;
 	letter-spacing: 0;
-	text-shadow: rgba(0,0,0,0.8) 0 2px 2px;
+	text-shadow: rgba(0,0,0,0.9) 0 2px 2px;
 }
 
 #content > section { 
 	box-sizing: border-box; 
-	color: #111;
+	color: #000;
 	display: block; position: relative;
 	background-position: center 0;
-	background-size: auto 100%;
+	background-size: 100% 100%;
 }
 
 #content h1 {
@@ -89,14 +89,13 @@ h4 {
 	background: none;
 	color: #eee;
 	padding: 40px 0;
-	text-shadow: rgba(255,255,255,0.4) 0 0 10px;
 }
 
 #content > section > div { 
 	position: absolute; left: 0; bottom: 0; right: 0; top: 199px;
 	padding: 40px;
 	box-sizing: border-box;
-	background-color: #ececec;
+	background-color: #fcfcfc;
 }
 
 #content a[name] {
@@ -112,19 +111,18 @@ h4 {
 #content .bg1 { 
 	background-image: url(../images/bg-1.jpg) !important;
 	background-repeat: no-repeat;
-	background-size: auto 100%;
+	background-size: 100% 100%;
 }
 
 #content .bg2 {
 	background-image: url(../images/bg-2.jpg);
 	background-repeat: no-repeat;
-	background-size: auto 100%;
+	background-size: 100% 100%;
 }
 
 #content .home {
 	background-image: url(../images/bg-2.jpg);
 	background-repeat: no-repeat;
-	color: #eee; 
 }
 
 #content > section.home > div {
@@ -144,10 +142,12 @@ h4 {
 .column2 { float: left; width: 490px; margin: 0 5px;  }
 .clear { clear: both; }
 
-.column > img { width: 100%;}
+.column > img { height: 170px; margin-top: 20px;}
 
+.portfolio { text-align: center; }
 .portfolio img {
-	width: 33%; border-radius: 8px; 
+	width: 240px; border-radius: 8px; height: 150px;
+	margin: 5px;
 	vertical-align: middle;
 	text-align: center;
 	-moz-box-sizing: border-box;
@@ -156,6 +156,7 @@ h4 {
 
 .social { padding: 0; }
 .social li { list-style-type: none; }
+.social img { width: 48px; height: 48px; }
 
 footer { 
 	height: 300px; padding-top: 20px; color: #aaa; font-size: 14px;
