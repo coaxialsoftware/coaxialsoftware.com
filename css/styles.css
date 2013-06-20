@@ -139,7 +139,11 @@ h4 {
 	float: left; min-height: 333px; width: 33%;
 	box-sizing: border-box; padding: 0 10px; text-align: center;
 }
-.column2 { float: left; width: 490px; margin: 0 5px;  }
+.column2 { float: left; width: 520px; margin: 0 5px;  }
+.column3 { float: left; width: 420px; margin: 0 5px; }
+
+.column3 img { width: 100%; }
+
 .clear { clear: both; }
 
 .column > img { height: 170px; margin-top: 20px;}
