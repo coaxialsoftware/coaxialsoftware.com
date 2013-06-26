@@ -104,8 +104,8 @@ h4 {
 
 .center {
 	position: absolute; top: 50%; left: 50%;
-	height: 450px; padding: 10px;
-	width: 860px; margin: -225px 0 0 -430px;
+	height: 430px; padding: 10px;
+	width: 860px; margin: -225px 0 0 -440px;
 }
 
 .bgbox { 
@@ -117,6 +117,13 @@ h4 {
 	background-image: url(../images/bg-1.jpg) !important;
 	background-repeat: no-repeat;
 	background-color: #eee;
+}
+
+@media screen and (min-width: 1280px) {
+	
+	#content .bg1 {
+		background-size: 100% 100%;
+	}
 }
 
 #content .bg2 {
