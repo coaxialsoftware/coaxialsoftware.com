@@ -80,7 +80,7 @@ h4 {
 	color: #000;
 	display: block; position: relative;
 	background-position: center 0;
-	background-size: 100% 100%;
+	background-size: auto 100%;
 }
 
 #content h1 {
@@ -104,20 +104,39 @@ h4 {
 
 .center {
 	position: absolute; top: 50%; left: 50%;
-	height: 450px;
+	height: 450px; padding: 10px;
 	width: 860px; margin: -225px 0 0 -430px;
+}
+
+.bgbox { 
+	background-color: rgba(255,255,255,0.7);
+	box-shadow: 0 0 50px #eee;
 }
 
 #content .bg1 { 
 	background-image: url(../images/bg-1.jpg) !important;
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-color: #eee;
 }
 
 #content .bg2 {
 	background-image: url(../images/bg-2.jpg);
 	background-repeat: no-repeat;
+	background-color: #eee;
+}
+
+#content .bg3 { 
+	background-image: url(../images/bg-3.jpg);
+	background-repeat: no-repeat;
 	background-size: 100% 100%;
+	background-color: #eee;
+}
+
+#content .bg4 { 
+	background-image: url(../images/bg-4.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-color: #eee;
 }
 
 #content .home {
@@ -150,8 +169,8 @@ h4 {
 
 .portfolio { text-align: center; }
 .portfolio img {
-	width: 240px; border-radius: 8px; height: 150px;
-	margin: 5px;
+	width: 240px; height: 150px;
+	margin: 5px; 
 	vertical-align: middle;
 	text-align: center;
 	-moz-box-sizing: border-box;
