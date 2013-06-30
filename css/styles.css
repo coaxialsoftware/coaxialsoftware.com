@@ -111,6 +111,7 @@ h4 {
 .bgbox { 
 	background-color: rgba(255,255,255,0.7);
 	box-shadow: 0 0 50px #eee;
+	padding: 20px;
 }
 
 #content .bg1 { 
@@ -146,7 +147,7 @@ h4 {
 	background-color: #eee;
 }
 
-#content .home {
+.home {
 	background-image: url(../images/bg-2.jpg);
 	background-repeat: no-repeat;
 }
@@ -174,6 +175,7 @@ h4 {
 
 .column > img { height: 170px; margin-top: 20px;}
 
+/*
 .portfolio { text-align: center; }
 .portfolio img {
 	width: 240px; height: 150px;
@@ -182,7 +184,10 @@ h4 {
 	text-align: center;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-}
+}*/
+
+.portfolio img { float: left; margin-right: 10px;}
+.portfolio p { padding-right: 10px; }
 
 .social { padding: 0; }
 .social li { list-style-type: none; }
@@ -204,3 +209,69 @@ footer > ul > li > ul {
 }
 
 #copyright { text-align: center; clear: both; width: 766px; margin: 10px auto; }
+
+/**
+ * SLIDE JS
+ ***************/
+#slides {
+      display: none
+    }
+
+    #slides .slidesjs-navigation {
+      margin-top:3px;
+    }
+
+    #slides .slidesjs-previous {
+      margin-right: 5px;
+      float: left;
+    }
+
+    #slides .slidesjs-next {
+      margin-right: 5px;
+      float: left;
+    }
+
+    .slidesjs-pagination {
+      margin: 6px 0 0;
+      float: right;
+      list-style: none;
+    }
+
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+
+    .slidesjs-pagination li a {
+      display: block;
+      width: 13px;
+      height: 0;
+      padding-top: 13px;
+      background-image: url(../images/pagination.png);
+      background-position: 0 0;
+      float: left;
+      overflow: hidden;
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-position: 0 -13px
+    }
+
+    .slidesjs-pagination li a:hover {
+      background-position: 0 -26px
+    }
+
+    #slides a:link,
+    #slides a:visited {
+      color: #333
+    }
+
+    #slides a:hover,
+    #slides a:active {
+      color: #9e2020
+    }
+
+    .navbar {
+      overflow: hidden
+    }
