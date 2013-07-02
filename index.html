@@ -196,49 +196,22 @@
 
 <script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
 <script src="jquery.slides.min.js"></script>
+<script src="scroller.js"></script>
 <script>
 $(function() {
 var
-	scroll = window.scrollTo,
-	links = $('a.smooth-scroll'),
 	bgs = $('section[style]'),
-	dy,
 	win = $(window),
-	initLinks = function() {
-		links.each(function() {
-			this.onclick = (function() {
-				scrollTo(this.left, this.top);
-				return false;
-			}).bind($('a[name=' + this.hash.substr(1) + ']').offset());
-		});
-	},
 	
 	resize = function() {
 		$('section').css('height', win.height());
-		initLinks();
 	}
 ;
-/*	win.scroll(function() {
-		document.body.style.backgroundPosition = '50% -' + (pageYOffset >> 2) + 'px';
-	});*/
-	
 	win.resize(resize);
 	resize();
 	
-	window.scrollTo = function(x, y, delay)
-	{
-		delay = delay || 200;
-	var
-		xi = pageXOffset, yi = pageYOffset,
-		dx = (x - xi)/delay, dy = (y - yi)/delay,
-		fn = function() { scroll(this.x, this.y); },
-		x = xi, y = yi,
-		t=0
-	;
-		while (delay--)
-			setTimeout(fn.bind({ x: x+=dx, y: y+=dy }), t++)
-	}
-	
+	scrollTo.easing = scrollTo.Easing.EaseOutBounce;
+	scrollTo.delay = 500;
 });
 
   var _gaq = _gaq || [];

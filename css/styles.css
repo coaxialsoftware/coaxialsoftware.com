@@ -33,6 +33,7 @@ header > nav > ul > li {
 header > nav > ul a {
 	color: #ddd; text-decoration: none; text-transform: uppercase;
 	margin-left: 20px;line-height: 59px;
+	transition: color 0.4s;
 }
 
 header > nav > ul a:hover {
@@ -56,6 +57,14 @@ blockquote {
 	padding: 40px 0; text-align: center;
 }
 
+h1 {
+	font-size: 40px;
+	text-align: center;
+	background: none;
+	color: #eee;
+	padding: 40px 0;
+}
+
 h2 { 
 	font-size: 40px;
 	color: #E74C3C;
@@ -76,6 +85,7 @@ h4 {
 }
 
 #content > section { 
+	-moz-box-sizing: border-box;
 	box-sizing: border-box; 
 	color: #000;
 	display: block; position: relative;
@@ -83,17 +93,11 @@ h4 {
 	background-size: auto 100%;
 }
 
-#content h1 {
-	font-size: 40px;
-	text-align: center;
-	background: none;
-	color: #eee;
-	padding: 40px 0;
-}
 
 #content > section > div { 
 	position: absolute; left: 0; bottom: 0; right: 0; top: 199px;
 	padding: 40px;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	background-color: #fcfcfc;
 }
@@ -109,8 +113,8 @@ h4 {
 }
 
 .bgbox { 
-	background-color: rgba(255,255,255,0.7);
-	box-shadow: 0 0 50px #eee;
+	background-color: rgba(0,0,0,0.4);
+	box-shadow: 0 0 50px #333;
 	padding: 20px;
 }
 
@@ -164,6 +168,8 @@ h4 {
 
 .column { 
 	float: left; min-height: 333px; width: 33%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box; padding: 0 10px; text-align: center;
 }
 .column2 { float: left; width: 520px; margin: 0 5px;  }
@@ -174,17 +180,6 @@ h4 {
 .clear { clear: both; }
 
 .column > img { height: 170px; margin-top: 20px;}
-
-/*
-.portfolio { text-align: center; }
-.portfolio img {
-	width: 240px; height: 150px;
-	margin: 5px; 
-	vertical-align: middle;
-	text-align: center;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}*/
 
 .portfolio img { float: left; margin-right: 10px;}
 .portfolio p { padding-right: 10px; }
