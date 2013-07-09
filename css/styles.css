@@ -40,8 +40,8 @@ header > nav > ul a:hover {
 	color: #e74c3c;
 }
 
-#logo > img { height: 30px; margin-top: 15px;  }
-#arrow { position: absolute; bottom: 20px; left: 50%; margin-left: -52px; }
+#logo > img { height: 30px; margin-top: 15px; border:0; }
+#arrow { border: 0; position: absolute; bottom: 20px; left: 50%; margin-left: -52px; }
 
 h1, h2, h3, h4, blockquote {
 	font-family: 'Oswald', sans-serif; 
@@ -177,7 +177,8 @@ h4 {
 
 .social { padding: 0; }
 .social li { list-style-type: none; }
-.social img { width: 48px; height: 48px; }
+.social img { border: 2px solid transparent; width: 48px; height: 48px; }
+.social a:hover img { border: 2px solid #333; }
 
 footer { 
 	height: 300px; padding-top: 20px; color: #aaa; font-size: 14px;
