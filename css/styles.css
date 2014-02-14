@@ -257,3 +257,6 @@ footer > ul > li > ul {
     .navbar {
       overflow: hidden
     }
+
+
+.slidesjs-control, .slidesjs-container { max-height: 500px; }
