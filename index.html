@@ -3,73 +3,56 @@
 <head>
 <title>Coaxial Software</title>
 
-<link rel="stylesheet" href="css/styles.css" />
 <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Viga' rel='stylesheet' type='text/css'>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
 
-<meta name="viewport" content="width=900" />
+<meta name="viewport" content="width=device-width"/>
 
 </head>
 <body>
 
-<header>
-	<nav>
-		<ul>
-		<li><a class="smooth-scroll" href="#about">About</a></li>
-		<li><a class="smooth-scroll" href="#portfolio">Services</a></li>
-		<li><a class="smooth-scroll" href="#contact">Contact</a></li>
-		</ul>
-		<a id="logo" href="javascript: scrollTo(0, 0)"><img src="images/logo.png" /></a>
-	</nav>
-</header>
-
-<div id="content">
+<div id="content" style="display: none;">
+	<header>
+		<nav>
+			<ul>
+			<li><a class="smooth-scroll" href="#about">About</a></li>
+			<li><a class="smooth-scroll" href="#portfolio">Services</a></li>
+			<li><a class="smooth-scroll" href="#contact">Contact</a></li>
+			</ul>
+			<a id="logo" href="javascript: scrollTo(0, 0)"><img src="images/logo.png" /></a>
+		</nav>
+	</header>
 	<section class="home">
-		<div>
-			<div>
-				<div class="column">
-					<h2>HTML5</h2>
-					<h4>Multi-platform<br/>Multi-device</h4>
-					<img src="images/HTML5_Badge_128.png" />
-					<!--
-					<p>
-					</p>
-					-->
-				</div>
-				<div class="column">
-					<h2>Frameworks</h2>
-					<h4>Pure Javascript<br/>Powerful Libraries</h4>
-					<img src="images/engine.png" />
-					<!--
-					<p>
-					Developed with compatibility and
-					performance in mind. GPLv3 License, commercial licenses also available.
-					</p>
-					-->
-				</div>
-				<div class="column">
-					<h2>Mobile</h2>
-					<h4>Native Speeds<br/>iOS and Android</h4>
-					<img src="images/mobile.png" />
-					<!--
-					<p>
-					Tools like CocoonJS and GameClosure allows us to deliver our apps 
-					to mobile devices. The same app will run on any other browser with no changes.
-					</p>
-					-->
-				</div>
-				<div class="clear"></div>
+	<div class="container">
+		
+		<div class="row">
+			<div class="col-sm-4">
+				<h2>HTML5</h2>
+				<h4>Multi-platform<br/>Multi-device</h4>
+				<img src="images/HTML5_Badge_128.png" />
 			</div>
-			<blockquote>Professional Front-End Development</blockquote>
+			<div class="col-sm-4">
+				<h2>Frameworks</h2>
+				<h4>Pure Javascript<br/>Powerful Libraries</h4>
+				<img src="images/engine.png" />
+			</div>
+			<div class="col-sm-4">
+				<h2>Mobile</h2>
+				<h4>Native Speeds<br/>iOS and Android</h4>
+				<img src="images/mobile.png" />
+			</div>
 		</div>
+	</div>
+		<blockquote>Professional Front-End Development</blockquote>
 		<a class="smooth-scroll" href="#about"><img id="arrow" src="images/arrow.svg"/></a>
 	</section>
 	<section class="bg3">
 	<a name="about"></a>
 	<blockquote>You have the idea, we make it happen</blockquote>
-	<div>
-		<div class="bgbox">
-			<div class="column3">
+	<div class="container">
+		<div class="row bgbox">
+			<div class="col-sm-6">
 				<h3>Who we are</h3>
 				<p>
 				Coaxial Software is a growing software development company located
@@ -85,10 +68,9 @@
 					usability on every platform, including mobile devices.
 				</p>
 			</div>
-			<div class="column3">
-				<img src="images/phones.jpg" />
+			<div class="col-sm-6 text-center">
+				<img class="img-responsive" src="images/phones.jpg" />
 			</div>
-			<div class="clear"></div>
 		</div>
 	</div>
 		<a class="smooth-scroll" href="#portfolio"><img id="arrow" src="images/arrow.svg"/></a>
@@ -96,62 +78,74 @@
 	<section class="bg4">
 	<a name="portfolio"></a>
 	<blockquote>Our Services</blockquote>
-	<div class="portfolio">
-		<div id="slides" class="bgbox">
+	<div class="container">
+		<div id="slides" class="row bgbox">
 			<div>
-				<img src="images/slide-apps.png" />
-				<h2>Web Applications</h2>
-				<h3>Cross-browser, Cross-Device</h3>
-				<p>
-					Our apps are tested in every modern browser and platform including
-					Android and iOS mobile devices. Our apps are developed with
-					both, accessibility and usability in mind.
-				</p>
-				<h3>Performance</h3>
-				<p>
-					Our applications use the latest technologies to ensure the best
-					experience in every browser.										
-				</p>
+				<div class="col-sm-6">
+					<img class="img-responsive" src="images/slide-apps.png" />
+				</div>
+				<div class="col-sm-6">
+					<h2>Web Applications</h2>
+					<h3>Cross-browser, Cross-Device</h3>
+					<p>
+						Our apps are tested in every modern browser and platform including
+						Android and iOS mobile devices. Our apps are developed with
+						both, accessibility and usability in mind.
+					</p>
+					<h3>Performance</h3>
+					<p>
+						Our applications use the latest technologies to ensure the best
+						experience in every browser.										
+					</p>
+				</div>
 			</div>
 			<div>
-				<img src="images/slide-ui.png" />
-				<h2>UI Components</h2>
-				<h3>Customized Widgets</h3>
-				<p>
-					We will build your cross-browser customized ExtJS, AngularJS and
-					jQuery UI components. Our widgets are not only reusable but also
-					maintanable. We document, lint and debug our code with the latest
-					tools available.
-				</p>
-				<h3>Open Source Tools</h3>
-				<p>
-					Our way to contribute to the Open Source community is to develop
-					free to use, open source tools like:
-					<a href="http://github.com/giancarlo/scroller.js">smooth scrolling</a>
-					and <a href="http://github.com/giancarlo/cxl-layout.js">Layout 
-					Manager</a>. Visit our <a href="http://github.com/CoaxialSoftware">
-					github</a> page for more.
-				</p>
+				<div class="col-sm-6">
+					<img class="img-responsive" src="images/slide-ui.png" />
+				</div>
+				<div class="col-sm-6">
+					<h2>UI Components</h2>
+					<h3>Customized Widgets</h3>
+					<p>
+						We will build your cross-browser customized ExtJS, AngularJS and
+						jQuery UI components. Our widgets are not only reusable but also
+						maintanable. We document, lint and debug our code with the latest
+						tools available.
+					</p>
+					<h3>Open Source Tools</h3>
+					<p>
+						Our way to contribute to the Open Source community is to develop
+						free to use, open source tools like:
+						<a href="http://github.com/giancarlo/scroller.js">smooth scrolling</a>
+						and <a href="http://github.com/giancarlo/cxl-layout.js">Layout 
+						Manager</a>. Visit our <a href="http://github.com/CoaxialSoftware">
+						github</a> page for more.
+					</p>
+				</div>
 			</div>
 			<div>
-				<img src="images/slide-games.png" />
-				<h2>HTML5 Games</h2>
-				<h3>Multi-Platform Games</h3>
-				<p>
-					We developed multiple HTML5 Games for compatible browsers and mobile devices.
-				</p>
-				<p>Some of the games are: <a href="http://coaxialsoftware.github.io/blocks">Blocks</a>,
-					<a href="http://giancarlo.github.io/breakout">Breakout</a>, 
-					<a href="http://giancarlo.github.io/bubbles">Bubbles</a>
-				</p>
-				<h3>J5G3 Framework</h3>
-				<p>
-					Our Open Source Game Engine developed for the latest browsers
-					including mobile devices.
-				</p>
-				<p>For the latest release visit
-					<a href="http://j5g3.com">http://j5g3.com</a>.
-				</p>
+				<div class="col-sm-6">
+					<img src="images/slide-games.png" />
+				</div>				
+				<div class="col-sm-6">
+					<h2>HTML5 Games</h2>
+					<h3>Multi-Platform Games</h3>
+					<p>
+						We developed multiple HTML5 Games for compatible browsers and mobile devices.
+					</p>
+					<p>Some of the games are: <a href="http://coaxialsoftware.github.io/blocks">Blocks</a>,
+						<a href="http://giancarlo.github.io/breakout">Breakout</a>, 
+						<a href="http://giancarlo.github.io/bubbles">Bubbles</a>
+					</p>
+					<h3>J5G3 Framework</h3>
+					<p>
+						Our Open Source Game Engine developed for the latest browsers
+						including mobile devices.
+					</p>
+					<p>For the latest release visit
+						<a href="http://j5g3.com">http://j5g3.com</a>.
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -159,9 +153,9 @@
 	</section>
 	<section class="bg1 home">
 	<a name="contact"></a>
-	<div>
-		<div>
-			<div class="column2">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8">
 				<h2>Get In Touch</h2>
 				<p>Feel free to send us a message if you want to discuss a new project or
 					have any feedback. We'll get back to you as soon as we can.
@@ -171,7 +165,7 @@
 				<a class="mail" href="mailto:support@coaxialhost.com">support at coaxialhost.com</a>
 				</p>
 			</div>
-			<div class="column">
+			<div class="col-sm-4">
 				<h3>Social Media</h3>
 				<ul class="social">
 				<li><a href="https://www.facebook.com/CoaxialSoftware"><img width="48" height="48" src="images/facebook-icon.png" /></a></li>
@@ -181,36 +175,56 @@
 			</div>
 			<div class="clear"></div>
 		</div>
-			<blockquote>Lets Get To Work</blockquote>
 	</div>
+			<blockquote>Lets Get To Work</blockquote>
 	</section>
+
+	<footer>
+		<div id="copyright">
+		Coaxial Software &copy; 2011-2013 <a href="mailto: giancarlo@coaxialhost.com">Contact</a>
+		</div>
+		
+	</footer>
 </div>
 
-<footer>
-	<div id="copyright">
-	Coaxial Software &copy; 2011-2013 <a href="mailto: giancarlo@coaxialhost.com">Contact</a>
-	</div>
-	
-</footer>
 
 <script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
 <script src="jquery.slides.min.js"></script>
 <script src="http://giancarlo.github.io/scroller.js/scroller.js"></script>
 <script>
 var
-	bgs = $('section[style]'),
 	win = $(window),
+	bgbox = $('.bgbox'),
 	
-	resize = function() {
-		$('section').css('height', win.height());
+	resize = function()
+	{
+		var h = win.height();
+		
+		$('section').css('min-height', h);
+		// Center all bgbox
+		bgbox.each(function() {
+			this.style.marginTop = (h - 250)/2 - this.clientHeight/2 + 'px';
+		});
 	}
 ;
 	win.resize(resize);
-	resize();
 	
 	scrollTo.easing = scrollTo.Easing.EaseOutExpo;
 	scrollTo.delay = 500;
 	
+	$(window).load(function() {
+		$('#content').show().css('opacity', 1);
+		
+		$('#slides').slidesjs({
+			play: { 
+		  	pauseOnHover: true, auto: true,
+		  	restartDelay: 2500
+		  }, navigation: { active: false }
+		});
+		
+		resize();
+	});
+
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-39089340-1']);
   _gaq.push(['_trackPageview']);
@@ -221,12 +235,7 @@ var
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
   
-  $('#slides').slidesjs({
-  	width: 860, height: 400, play: { 
-  		pauseOnHover: true, auto: true,
-  		restartDelay: 2500
-  	}, navigation: { active: false }
-  });
+
 
 </script>
 
