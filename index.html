@@ -3,135 +3,250 @@
 <head>
 <title>Coaxial Software</title>
 
-<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" />
-<link rel="stylesheet" href="css/styles.css" />
+<link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/styles2.css" />
 
 <meta name="viewport" content="width=device-width"/>
 
 </head>
 <body>
 
-<div id="content" style="display: none;">
-	<header>
-		<nav>
-			<ul>
+<header>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+			<a class="navbar-brand" id="logo" href="javascript: scrollTo(0, 0)"><img src="images/logo.png" /></a>
+	    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
 			<li><a class="smooth-scroll" href="#about">About</a></li>
 			<li><a class="smooth-scroll" href="#portfolio">Services</a></li>
 			<li><a class="smooth-scroll" href="#contact">Contact</a></li>
-			</ul>
-			<a id="logo" href="javascript: scrollTo(0, 0)"><img src="images/logo.png" /></a>
-		</nav>
-	</header>
-	<section class="home">
-	<div class="container">
-		
-		<div class="row">
-			<div class="col-sm-4">
-				<h2>HTML5</h2>
-				<h4>Multi-platform<br/>Multi-device</h4>
-				<img src="images/HTML5_Badge_128.png" />
-			</div>
-			<div class="col-sm-4">
-				<h2>Frameworks</h2>
-				<h4>Pure Javascript<br/>Powerful Libraries</h4>
-				<img src="images/engine.png" />
-			</div>
-			<div class="col-sm-4">
-				<h2>Mobile</h2>
-				<h4>Native Speeds<br/>iOS and Android</h4>
-				<img src="images/mobile.png" />
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+	</nav>
+</header>
+	
+<div id="content" style="display: none;">
+	<section class="home bg1">
+	
+	<div class="bgbox jumbotron">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 text-center middle">
+					<img class="img-responsive" src="images/home8.png" />
+				</div>
+				<div class="col-sm-6 text-right">
+					<h1>Professional<br/>Front-End Development</h1>
+					<h2>Bring your ideas to life</h2>
+					<p>
+						We are a growing software development company located in the Washington DC metro area.
+					</p>
+					<p>
+						We use the latest HTML5 technologies to build
+						fully responsive, mobile friendly web applications.
+					</p>
+	<a href="https://www.facebook.com/CoaxialSoftware"><i class="fa fa-facebook"></i></a>
+	<a href="https://twitter.com/CoaxialSoftware"><i class="fa fa-twitter"></i></a>
+	<a href="https://linkedin.com/company/coaxial-software"><i class="fa fa-linkedin"></i></a>
+	<a href="https://github.com/coaxialsoftware"><i class="fa fa-github"></i></a>
+				</div>
 			</div>
 		</div>
 	</div>
-		<blockquote>Professional Front-End Development</blockquote>
+	
+	
 		<a class="smooth-scroll" href="#about"><img id="arrow" src="images/arrow.svg"/></a>
 	</section>
-	<section class="bg3">
+<div class="skills">
+	<div class="container text-center">
+		<div class="row">
+			<div class="col-sm-4">
+				<h1><i class="fa fa-coffee"></i></h1>	
+				<h2>Mobile and Desktop</h2>
+			</div>
+			<div class="col-sm-4">
+				<h1><i class="fa fa-pencil"></i></h1>	
+				<h2>Unique Design</h2>
+			</div>	
+			<div class="col-sm-4">
+				<h1><i class="fa fa-cogs"></i></h1>	
+				<h2>Powerful Frameworks</h2>
+			</div>	
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				<p>We test performance and
+						usability on every platform, including mobile devices.</p>
+			</div>
+			<div class="col-sm-4">
+				<p>Beatiful graphics, responsive designs.</p>
+			</div>	
+			<div class="col-sm-4">
+				<p>
+					We use HTML5 and Javascript to build
+					fully responsive, mobile friendly applications and frameworks.
+				</p>
+			</div>	
+			
+		</div>
+	</div>
+</div>
+	<section>
 	<a name="about"></a>
-	<blockquote>You have the idea, we make it happen</blockquote>
-	<div class="container">
-		<div class="row bgbox">
+	<div class="bgbox">
+		<blockquote>You have the idea. We make it happen.</blockquote>
+		<h4>HTML5, Javascript Specialists</h4>
+		<div class="container">
+			<div class="col-sm-6 text-center">
+				<div id="phone">
+					<div id="phone-slides" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner">
+							<div class="item active">
+						<img src="images/thumb_coaxial.png" />
+							</div>							
+							<div class="item">
+						<img src="images/thumb_asteroids.png" />
+							</div>
+							<div class="item">
+						<img src="images/thumb_blocks.png" />
+							</div>
+							<div class="item">
+						<img src="images/thumb_breakout.png" />
+							</div>
+							<div class="item">
+						<img src="images/thumb_docs.png" />
+							</div>
+							<div class="item">
+						<img src="images/thumb_glenair.png" />
+							</div>
+							<div class="item">
+						<img src="images/thumb_ide.png" />
+							</div>
+							<div class="item">
+						<img src="images/thumb_interactable.png" />
+							</div>
+							<div class="item">
+						<img src="images/thumb_j5g3.png" />
+							</div>
+							<div class="item">
+						<img src="images/thumb_lazaro.png" />
+							</div>
+							<div class="item">
+						<img src="images/thumb_regex.png" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="col-sm-6">
 				<h3>Who we are</h3>
 				<p>
-				Coaxial Software is a growing software development company located
+				Coaxial Software is a growing web development company located
 				in the Washington DC metro area. 
 				</p>
-				<p>Our team of developers and designers work together to bring your 
-				best ideas to life. Our focus is HTML5 and Javascript Development.</p>
+				<p>Our developers and designers work together to bring your 
+				best ideas to life.</p>
 				<h3>What We Do</h3>
 				<p>
-					We use the latest HTML5, CSS, and Javascript technologies to build
-					fully responsive, mobile friendly web applications, frameworks and libraries. 
+					We use the latest HTML5 technologies to build
+					fully responsive, mobile friendly web applications, frameworks and libraries.</p><p> 
 					We rigorously test performance and
 					usability on every platform, including mobile devices.
 				</p>
-			</div>
-			<div class="col-sm-6 text-center">
-				<img class="img-responsive" src="images/phones.png" />
 			</div>
 		</div>
 	</div>
 		<a class="smooth-scroll" href="#portfolio"><img id="arrow" src="images/arrow.svg"/></a>
 	</section>
-	<section class="bg4">
-	<a name="portfolio"></a>
-	<blockquote>Our Services</blockquote>
+<div style="display: none" class="skills">
+	<h2>Portfolio</h2>	
 	<div class="container">
-		<div id="slides" class="row bgbox">
-			<div>
-				<div class="col-sm-6">
+		<h4>Games</h4>
+		<div class="row">
+			<div class="col-sm-4">
+				<img class="img-thumbnail gallery" src="images/breakout.png" />
+			</div>
+			<div class="col-sm-4">
+				<img class="img-thumbnail gallery" src="images/blocks.jpg" />
+			</div>
+			<div class="col-sm-4">
+				<img class="img-thumbnail gallery" src="images/thumb_bubbles.jpg" />
+			</div>
+		</div>
+		<h4>Open Source</h4>
+	</div>
+</div>
+	<section>
+	<a name="portfolio"></a>
+<div class="bgbox">
+	<blockquote>Cross-browser, Cross-platform, Cross-device</blockquote>
+	<h4>Our Services</h4>
+	<div id="slides" class="carousel slide" data-ride="carousel">
+	<div class="container">
+		<div class="carousel-inner">
+			<div class="item active">
+				<div class="col-sm-6 text-center">
 					<img class="img-responsive" src="images/slide-apps.png" />
 				</div>
 				<div class="col-sm-6">
-					<h2>Web Applications</h2>
-					<h3>Cross-browser, Cross-Device</h3>
+					<h2>Web Development</h2>
 					<p>
-						Our apps are tested in every modern browser and platform including
-						Android and iOS mobile devices. Our apps are developed with
+						Front-End development in every browser and platform including
+						Android and iOS mobile devices. Our applications are developed with
 						both, accessibility and usability in mind.
 					</p>
 					<h3>Performance</h3>
 					<p>
-						Our applications use the latest technologies to ensure the best
-						experience in every browser.										
+						We use the latest technologies to ensure the best
+						user experience across all devices. Your users must be able to access your content in any browser. We can make that happen for you.
 					</p>
 				</div>
 			</div>
-			<div>
-				<div class="col-sm-6">
+			<div class="item">
+				<div class="col-sm-6 text-center">
 					<img class="img-responsive" src="images/slide-ui.png" />
 				</div>
 				<div class="col-sm-6">
-					<h2>UI Components</h2>
-					<h3>Customized Widgets</h3>
+					<h2>User Experience</h2>
 					<p>
-						We will build your cross-browser customized ExtJS, AngularJS and
-						jQuery UI components. Our widgets are not only reusable but also
+						We build customized UI Components and Layouts using Backbone, Bootstrap, ExtJS, AngularJS and
+						jQuery. Our widgets are not only reusable but also
 						maintanable. We document, lint and debug our code with the latest
 						tools available.
 					</p>
-					<h3>Open Source Tools</h3>
+					<h3>Open Source</h3>
 					<p>
 						Our way to contribute to the Open Source community is to develop
 						free to use, open source tools like:
 						<a href="http://github.com/giancarlo/scroller.js">smooth scrolling</a>
-						and <a href="http://github.com/giancarlo/cxl-layout.js">Layout 
-						Manager</a>. Visit our <a href="http://github.com/CoaxialSoftware">
+						and <a href="http://github.com/giancarlo/cxl-layout.js">Layout 						Manager</a>. Visit our <a href="http://github.com/CoaxialSoftware">
 						github</a> page for more.
 					</p>
 				</div>
+				
 			</div>
-			<div>
-				<div class="col-sm-6">
-					<img src="images/slide-games.png" />
+			<div class="item">
+				<div class="col-sm-6 text-center">
+					<img class="img-responsive" src="images/slide-games.png" />
 				</div>				
 				<div class="col-sm-6">
 					<h2>HTML5 Games</h2>
-					<h3>Multi-Platform Games</h3>
 					<p>
-						We developed multiple HTML5 Games for compatible browsers and mobile devices.
+						Engaging games for browsers and mobile devices. 2d and WebGL enabled.
 					</p>
 					<p>Some of the games are: <a href="http://coaxialsoftware.github.io/blocks">Blocks</a>,
 						<a href="http://giancarlo.github.io/breakout">Breakout</a>, 
@@ -149,62 +264,98 @@
 			</div>
 		</div>
 	</div>
+		<ol class="carousel-indicators">
+		    <li data-target="#slides" data-slide-to="0" class="active"></li>
+		    <li data-target="#slides" data-slide-to="1"></li>
+		    <li data-target="#slides" data-slide-to="2"></li>
+		</ol>
+	</div>
+</div>	
 		<a class="smooth-scroll" href="#contact"><img id="arrow" src="images/arrow.svg"/></a>
 	</section>
-	<section class="bg1 home">
+
 	<a name="contact"></a>
+<footer>
+<div class="footer">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-8">
-				<h2>Get In Touch</h2>
+			<div class="col-sm-6">
+				<h3>Get In Touch</h3>
+				<hr>
+				<ul class="list-unstyled">
+					<li>
+						<span class="glyphicon glyphicon-envelope"></span>
+						<strong>Info: </strong>
+						<a href="mailto:info@coaxialhost.com">info@coaxialhost.com</a>
+					</li>
+					<li>
+						<span class="glyphicon glyphicon-envelope"></span>
+						<strong>Support: </strong>
+						<a href="mailto:support@coaxialhost.com">support@coaxialhost.com</a>
+					</li>
+				</ul>
 				<p>Feel free to send us a message if you want to discuss a new project or
-					have any feedback. We'll get back to you as soon as we can.
-				</p>
-				<p>				
-				<a class="mail" href="mailto:info@coaxialhost.com">info at coaxialhost.com</a><br/>
-				<a class="mail" href="mailto:support@coaxialhost.com">support at coaxialhost.com</a>
+					have any feedback.</p>
+				<p>We'll get back to you as soon as we can.
 				</p>
 			</div>
-			<div class="col-sm-4">
-				<h3>Social Media</h3>
-				<ul class="social">
-				<li><a href="https://www.facebook.com/CoaxialSoftware"><img width="48" height="48" src="images/facebook-icon.png" /></a></li>
-				<li><a href="https://twitter.com/CoaxialSoftware"><img width="48" height="48" src="images/twitter-icon.png" /></a></li>
-				<li><a href="https://linkedin.com/company/coaxial-software"><img width="48" height="48" src="images/linkedin-icon.png" /></a></li>
-				<li><a href="https://github.com/coaxialsoftware"><img width="48" height="48" src="images/github-icon.png" /></a></li>
+			<div class="col-sm-6">
+				<h3>Latest News</h3>
+				<hr>
+				<a class="twitter-timeline" data-theme="dark" data-chrome="noheader nofooter transparent" height="220" href="https://twitter.com/CoaxialSoftware" data-widget-id="301967994664402945">Tweets by @CoaxialSoftware</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 			</div>
-			<div class="clear"></div>
-		</div>
-	</div>
-			<blockquote>Lets Get To Work</blockquote>
-	</section>
-
-	<footer>
-		<div id="copyright">
-		Coaxial Software &copy; 2011-2013 <a href="mailto: giancarlo@coaxialhost.com">Contact</a>
 		</div>
 		
-	</footer>
+		<div id="copyright"><small>
+		Coaxial Software &copy; 2011-2013 All Rights Reserved.
+		</small></div>
+	</div>
+</div>
+		
+</footer>
 </div>
 
 
-<script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
-<script src="jquery.slides.min.js"></script>
-<script src="http://giancarlo.github.io/scroller.js/scroller.js"></script>
+<script src="//code.jquery.com/jquery-2.0.0.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="//giancarlo.github.io/scroller.js/scroller.js"></script>
 <script>
 var
 	win = $(window),
 	bgbox = $('.bgbox'),
-	
-	resize = function()
+	middle = $('.middle'),
+	timeout,
+		
+	doBGBox = function()
 	{
 		var h = win.height();
-		
 		$('section').css('min-height', h);
 		// Center all bgbox
 		bgbox.each(function() {
-			this.style.marginTop = (h - 250)/2 - this.clientHeight/2 + 'px';
+			if (h > this.clientHeight)
+				this.style.marginTop = (this.clientHeight/-2) + 'px';
 		});
+	},
+	
+	doMiddle = function()
+	{
+		middle.each(function() {
+			this.style.marginTop = (this.parentNode.clientHeight - this.clientHeight)/2	+ 'px';
+		});
+	},
+	
+	doAlign = function()
+	{
+		doBGBox(); doMiddle();	
+	},
+	
+	resize = function()
+	{
+		if (timeout)
+			clearTimeout(timeout);
+			
+		timeout = setTimeout(doAlign, 150);
 	}
 ;
 	win.resize(resize);
@@ -212,17 +363,13 @@ var
 	scrollTo.easing = scrollTo.Easing.EaseOutExpo;
 	scrollTo.delay = 500;
 	
-	$(window).load(function() {
+	$(function() {
 		$('#content').show().css('opacity', 1);
-		
-		$('#slides').slidesjs({
-			play: { 
-		  	pauseOnHover: true, auto: true,
-		  	restartDelay: 2500
-		  }, navigation: { active: false }
-		});
-		
-		resize();
+		doBGBox();
+	});
+	
+	$(window).load(function() {
+		doAlign();
 	});
 
   var _gaq = _gaq || [];
@@ -238,4 +385,5 @@ var
 
 
 </script>
-
+</body>
+</html>
