@@ -64,7 +64,8 @@ blockquote {
 .jumbotron i.fa { color: #666; font-size: 40px; margin: 30px 0 30px 20px; transition: color 0.5s; }
 .jumbotron i.fa:hover { color: #111; }
 
-.carousel-control { color: #333; background-image: none !important; }
+.carousel-control { width: 10%; color: #333; background-image: none !important; }
+.carousel-control:hover { color: #000; }
 .carousel-indicators { bottom: -50px; }
 .carousel-indicators > li { background-color: #999; }
 .carousel-indicators > li.active { background-color: #333; }
