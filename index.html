@@ -5,8 +5,8 @@
 
 <link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css" />
 
 <meta name="viewport" content="width=device-width"/>
@@ -33,6 +33,7 @@
       <ul class="nav navbar-nav navbar-right">
 			<li><a class="smooth-scroll" href="#about">About</a></li>
 			<li><a class="smooth-scroll" href="#portfolio">Services</a></li>
+			<li><a class="smooth-scroll" href="#portfolio">Work</a></li>
 			<li><a class="smooth-scroll" href="#contact">Contact</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
@@ -42,15 +43,16 @@
 	
 <div id="content" style="display: none;">
 	<section class="home bg1">
+		<a name="home"></a>
 	
 	<div class="bgbox jumbotron">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-6 text-center middle">
-					<img class="img-responsive" src="images/home8.png" />
+					<img class="img-main img-responsive hidden-xs" src="images/home8.png" />
 				</div>
 				<div class="col-sm-6 text-right middle">
-					<h1>Professional<br/>Front-End Development</h1>
+					<h1>Professional<br/>Software Development</h1>
 					<h2>Bring your ideas to life</h2>
 					<p>
 						We are a growing software development company located in the Washington DC metro area.
@@ -59,17 +61,19 @@
 						We use the latest HTML5 technologies to build
 						fully responsive, mobile friendly web applications.
 					</p>
+<!--
 	<a href="https://www.facebook.com/CoaxialSoftware"><i class="fa fa-facebook"></i></a>
 	<a href="https://twitter.com/CoaxialSoftware"><i class="fa fa-twitter"></i></a>
 	<a href="https://linkedin.com/company/coaxial-software"><i class="fa fa-linkedin"></i></a>
 	<a href="https://github.com/coaxialsoftware"><i class="fa fa-github"></i></a>
+-->
 				</div>
 			</div>
 		</div>
 	</div>
 	
 	
-		<a class="smooth-scroll" href="#about"><img id="arrow" src="images/arrow.svg"/></a>
+		<a class="arrow smooth-scroll" href="#about"><img src="images/arrow.svg"/></a>
 	</section>
 <div class="skills">
 	<div class="container text-center">
@@ -77,31 +81,22 @@
 			<div class="col-sm-4">
 				<h1><i class="fa fa-coffee"></i></h1>	
 				<h2>Mobile and Desktop</h2>
-			</div>
-			<div class="col-sm-4">
-				<h1><i class="fa fa-pencil"></i></h1>	
-				<h2>Unique Design</h2>
-			</div>	
-			<div class="col-sm-4">
-				<h1><i class="fa fa-cogs"></i></h1>	
-				<h2>Powerful Frameworks</h2>
-			</div>	
-		</div>
-		<div class="row">
-			<div class="col-sm-4">
 				<p>We test performance and
 						usability on every platform, including mobile devices.</p>
 			</div>
 			<div class="col-sm-4">
+				<h1><i class="fa fa-pencil"></i></h1>	
+				<h2>Unique Design</h2>
 				<p>Beatiful graphics, responsive designs.</p>
 			</div>	
 			<div class="col-sm-4">
+				<h1><i class="fa fa-cogs"></i></h1>	
+				<h2>Powerful Frameworks</h2>
 				<p>
 					We use HTML5 and Javascript to build
 					fully responsive, mobile friendly applications and frameworks.
 				</p>
 			</div>	
-			
 		</div>
 	</div>
 </div>
@@ -115,10 +110,8 @@
 				<div id="phone">
 					<div id="phone-slides" class="carousel slide" data-ride="carousel">
 						<div class="carousel-inner">
+
 							<div class="item active">
-						<img src="images/thumb_coaxial.png" />
-							</div>							
-							<div class="item">
 						<img src="images/thumb_asteroids.png" />
 							</div>
 							<div class="item">
@@ -126,9 +119,6 @@
 							</div>
 							<div class="item">
 						<img src="images/thumb_breakout.png" />
-							</div>
-							<div class="item">
-						<img src="images/thumb_docs.png" />
 							</div>
 							<div class="item">
 						<img src="images/thumb_glenair.png" />
@@ -145,9 +135,7 @@
 							<div class="item">
 						<img src="images/thumb_lazaro.png" />
 							</div>
-							<div class="item">
-						<img src="images/thumb_regex.png" />
-							</div>
+
 						</div>
 					</div>
 				</div>
@@ -170,9 +158,8 @@
 			</div>
 		</div>
 	</div>
-		<a class="smooth-scroll" href="#portfolio"><img id="arrow" src="images/arrow.svg"/></a>
-	</section>
-<div style="display: none" class="skills">
+		<a class="arrow smooth-scroll" href="#portfolio"><img src="images/arrow.svg"/></a>
+	</section><div style="display: none" class="skills">
 	<h2>Portfolio</h2>	
 	<div class="container">
 		<h4>Games</h4>
@@ -193,9 +180,9 @@
 	<section>
 	<a name="portfolio"></a>
 <div class="bgbox">
-	<blockquote>Cross-browser, Cross-platform, Cross-device</blockquote>
+	<blockquote>Cross-platform, Cross-device</blockquote>
 	<h4>Our Services</h4>
-	<div id="slides" class="carousel slide" data-ride="carousel">
+	<div id="slides" data-interval="false" class="carousel slide" data-ride="carousel">
 	<div class="container">
 		<div class="carousel-inner">
 			<div class="item active">
@@ -272,7 +259,7 @@
   </a>
 	</div>
 </div>	
-		<a class="smooth-scroll" href="#contact"><img id="arrow" src="images/arrow.svg"/></a>
+		<a class="smooth-scroll arrow" href="#contact"><img src="images/arrow.svg"/></a>
 	</section>
 
 	<a name="contact"></a>
@@ -318,8 +305,8 @@
 </div>
 
 
-<script src="//code.jquery.com/jquery-2.0.0.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="//giancarlo.github.io/scroller.js/scroller.js"></script>
 <script>
 var
@@ -333,10 +320,10 @@ var
 		var h = win.height();
 		$('section').css('min-height', h);
 		// Center all bgbox
-		bgbox.each(function() {
+		/*bgbox.each(function() {
 			if (h > this.clientHeight)
 				this.style.marginTop = (this.clientHeight/-2) + 'px';
-		});
+		});*/
 	},
 	
 	doMiddle = function()
@@ -359,19 +346,20 @@ var
 		timeout = setTimeout(doAlign, 150);
 	}
 ;
-	win.resize(resize);
+	//win.resize(resize);
 	
 	scrollTo.easing = scrollTo.Easing.EaseOutExpo;
 	scrollTo.delay = 500;
 	
 	$(function() {
 		$('#content').show().css('opacity', 1);
-		doBGBox();
+		//doBGBox();
 	});
+	/*
 	
 	$(window).load(function() {
 		doAlign();
-	});
+	});*/
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-39089340-1']);
