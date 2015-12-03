@@ -20,6 +20,7 @@ a {
 .navbar-brand { margin-top: 5px; padding-right: 0; }
 .navbar-inverse .navbar-nav>li>a { color: #ccc; line-height: 25px; }
 .middle { transition: margin-top 0.5s; }
+.img-thumbnail { border-radius: 0; }
 
 header a.smooth-scroll {
 	font-size: 18px; font-family: 'Oswald', sans-serif; 
@@ -86,6 +87,11 @@ blockquote {
 	text-align: center;
 }
 
+.work {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+.work img { margin-bottom: 20px; }
+
 .skills h1 {
 	border: 2px solid #eee;
 	border-radius: 80px;
@@ -112,7 +118,6 @@ h3 {
 }
 
 h4 {
-	margin-top: 0;
 	margin-bottom: 20px;
 	letter-spacing: 2px;
 	text-align: center;
@@ -246,4 +251,8 @@ footer > ul > li > ul {
 	footer { background-size: auto 100%; }
 	#slides .carousel-inner > .item { display: block; }
 	#slides .carousel-control { display: none; }
+}
+
+@media (min-width: 1200px) {
+	.img-main { max-width: 460px; }
 }
